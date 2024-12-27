@@ -2,6 +2,10 @@ from django.db import models
 
 """
     posts = post.object.all() == SELECT * FROM posts
+    posts = post.object.get(id=1)
+    posts = post.object.filter(name="a")
+    posts = post.object.create()
+    
 """
 
 class Catigory(models.Model):

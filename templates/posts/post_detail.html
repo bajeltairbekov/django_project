@@ -1,0 +1,16 @@
+{%extends "base.html"%}
+
+{%block content%}
+<div class="card" style="width: 18rem;">
+  {%if post.image%}
+  <img src="{{post.image.url}}" class="card-img-top" alt="...">
+  {%else%}
+  <img src="/static/default-avatar-photo-placeholder-profile-icon-female-vector.jpg" class="card-img-top" alt="...">
+  {%endif%}
+  <div class="card-body">
+    <h5 class="card-title">{{post.title}}</h5>
+    <p class="card-text">{{post.discription}}</p>
+    <p class="card-text" style="color: hotpink">{{post.created_at}}</p>
+  </div>
+</div>
+{%endblock%}

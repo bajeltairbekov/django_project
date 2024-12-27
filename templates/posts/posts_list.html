@@ -12,7 +12,7 @@
     <h5 class="card-title">{{post.title}}</h5>
     <p class="card-text">{{post.discription}}</p>
     <p class="card-text" style="color: hotpink">{{post.created_at}}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="/posts/{{post.id}}/" class="btn btn-primary">Go to post</a>
   </div>
 </div>
 {%endfor%}
